@@ -1,0 +1,15 @@
+.cartHeader {
+    user-select: none;
+}
+
+.cartBody {
+    user-select: none;
+}
+
+.cartFooter {
+    user-select: none;
+}
+
+.productSection {
+    user-select: none;
+}
