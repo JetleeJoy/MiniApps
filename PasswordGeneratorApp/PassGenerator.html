@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./PassGenerator.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Oxygen:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awsome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src="./PassGenerator.js"></script>
+
+<body>
+    <div class="container">
+        <!-- generator elements are contained here -->
+        <div class="pass">
+            <!-- generator title section -->
+            <div class="pass-title">Password_Generator</div>
+            <!-- generator result section -->
+            <div class="pass-inputArea">
+                <div class="inputField">
+                    <input type="text" id="generatedPassword" disabled>
+                </div>
+                <div class="copyBtn">
+                    <button onclick="return copyPassword()"><i id="cpyBtn" class="fa fa-copy"></i></button>
+                </div>
+                <div class="clearBtn">
+                    <button onclick="return clearPassword()"><i id="clrBtn" class="fa fa-eraser"></i></button>
+                </div>
+            </div>
+            <p style="text-align: center; margin-bottom: 0; user-select: none;">minimum length : 6 || maximum length : 16</p>
+            <!-- generator condition section -->
+            <div class="pass-inputCondition">
+                <table class="pass-c">
+                    <tr>
+                        <td><label for="length">Length of password</label></td>
+                        <td><input type="number" style="width: 40px;" name="length" id="length" value="16"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="caseUpperCondition">Upper Case Letter</label></td>
+                        <td><input type="checkbox" name="upperCaseCondition" id="caseUpperCondition"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="caseLowerCondition">Lower Case Letter</label></td>
+                        <td><input type="checkbox" name="lowerCaseCondition" id="caseLowerCondition"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="numberCondition">Numbers</label></td>
+                        <td><input type="checkbox" name="numberCondition" id="numberCondition"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="specialCondition">Special Symbols</label></td>
+                        <td><input type="checkbox" name="specialCondition" id="specialCondition"></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- generate footer section -->
+            <div class="pass-footer">
+                <button class="pass-genBtn" onclick='return generate()' id="pass-genBtn">Generate</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

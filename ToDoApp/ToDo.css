@@ -1,0 +1,114 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Quicksand;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.to-do {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.to-do-input {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top : 30px;
+    z-index: 99;
+}
+
+.to-do-input button {
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+}
+
+.to-do-input button i {
+    font-size: 40px;
+    color: #ABBABB;
+}
+
+input[type=text] {
+    border-radius: 20px;
+    padding: 2px 2px 3px 1rem;
+    width: 700px;
+    height: 70px;
+    font-size: 30px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-width: 0.1em;
+    border-bottom-color: #000000e4;
+    color: #ABBABB;
+    background-color: #026daf71;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.393);
+    backdrop-filter: blur(5px);
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.to-do-list {
+  margin-top: 1rem;
+}
+
+.to-do-item{
+    margin-bottom: 10px;
+    padding : 0.5rem;
+    background-color: #294C71;
+    border-radius: 15px;
+    font-size: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.393);
+    backdrop-filter: blur(5px);
+    color:#ABBABB;
+    user-select: none;
+    font-weight: bold;
+}
+
+.child {
+    display: inline-block;
+}
+
+
+.todo-editBtn {
+    margin-left: 1rem;
+    padding: 5px;
+    background-color: #2a4c7000;
+    border: none;
+    color: #ABBABB;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.todo-editBtn:hover {
+    color: #ffffff;
+}

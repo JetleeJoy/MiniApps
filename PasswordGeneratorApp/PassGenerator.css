@@ -1,0 +1,153 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Jost;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.pass {
+    background-color: burlywood;
+    height: 500px;
+    width: 500px;
+    /* Credit : From https://css.glass */
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pass-title {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+.pass-inputArea {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    user-select: none;
+}
+
+input[type=text] {
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    margin: 2px 4px;
+    border: none;
+    padding: 15px 2px 10px 0.5rem;
+    background-color: #e2e3e3;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.copyBtn>Button , .clearBtn>Button {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.26);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.copyBtn i, .clearBtn i {
+    font-size: 30px;
+    color: #828484;
+}
+
+.copyBtn i:hover, .clearBtn i:hover {
+    color: #415f75;
+}
+
+.pass-inputCondition {
+    font-size: 25px;
+    margin: 0 2rem 0 2rem;
+    height: auto;
+    padding: 1rem 2rem 1rem 1rem;
+    user-select: none;
+}
+
+.pass-c {
+    padding-left: 2rem;
+}
+
+table tr:nth-child(1) td:nth-child(2) input[type=number] {
+    border-radius: 6px;
+    border: none;
+    background-color: #e2e3e3;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 5px 10px 5px 5px;
+    font-size: 20px;
+}
+
+table td:nth-child(2) {
+    padding-left: 4rem;
+}
+
+input[type=checkbox] {
+    accent-color: green;
+    width: 15px;
+    height: 15px;
+}
+
+.pass-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.pass-genBtn {
+    padding: 20px 30px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(73, 73, 73, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(12, 12, 12, 0.8);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.pass-genBtn:hover {
+    background-color: rgba(104, 104, 104, 0.436);
+    backdrop-filter: blur(30px);
+}
