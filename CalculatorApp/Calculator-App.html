@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-App</title>
+    <!-- External style sheet, Javascript and Google Font link -->
+    <script src="./Calculator-App.js"></script>
+    <link rel="stylesheet" href="./Calculator-App.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main application container -->
+        <div class="calculatorArea">
+            <!-- center aligned area for application -->
+            <div class="calculatorBody">
+                <!-- application body container where header, result and keys present -->
+                <div class="calculatorHeader">
+                    <!-- application title -->
+                    <span> Calculator </span>
+                </div>
+                <div class="calculatorResult">
+                    <!-- calculation result  -->
+                    <span id="resultField"></span>
+                </div>
+                <div class="calculatorKeys">
+                    <!-- operator keys -->
+                    <button type="button" class="operator" value="+"
+                        onclick="return displayInResultField(this.value)">+</button>
+                    <button type="button" class="operator" value="-"
+                        onclick="return displayInResultField(this.value)">-</button>
+                    <button type="button" class="operator" value="/"
+                        onclick="return displayInResultField(this.value)">/</button>
+                    <button type="button" class="operator" value="*"
+                        onclick="return displayInResultField(this.value)">x</button>
+                    <button type="button" class="operator" value="%"
+                        onclick="return displayInResultField(this.value)">%</button>
+
+                    <!-- numeric keys -->
+                    <button type="button" class="number" value="7"
+                        onclick="return displayInResultField(this.value)">7</button>
+                    <button type="button" class="number" value="8"
+                        onclick="return displayInResultField(this.value)">8</button>
+                    <button type="button" class="number" value="9"
+                        onclick="return displayInResultField(this.value)">9</button>
+
+                    <!-- precedence operator keys -->
+                    <button type="button" class="operator" value="("
+                        onclick="return displayInResultField(this.value)">(</button>
+                    <button type="button" class="operator" value=")"
+                        onclick="return displayInResultField(this.value)">)</button>
+
+                    <!-- numeric keys -->
+                    <button type="button" class="number" value="4"
+                        onclick="return displayInResultField(this.value)">4</button>
+                    <button type="button" class="number" value="5"
+                        onclick="return displayInResultField(this.value)">5</button>
+                    <button type="button" class="number" value="6"
+                        onclick="return displayInResultField(this.value)">6</button>
+                    <button type="button" class="backspace" value="_" onclick="return backSpaceFun()">backspace</button>
+                    <button type="button" class="number" value="1"
+                        onclick="return displayInResultField(this.value)">1</button>
+                    <button type="button" class="number" value="2"
+                        onclick="return displayInResultField(this.value)">2</button>
+                    <button type="button" class="number" value="3"
+                        onclick="return displayInResultField(this.value)">3</button>
+                    <button type="button" class="number" value="0"
+                        onclick="return displayInResultField(this.value)">0</button>
+                    <!-- utility keys -->
+                    <button type="button" class="assignment" value="=" onclick="return calculateResult()">=</button>
+                    <button type="button" class="number" value="."
+                        onclick="return displayInResultField(this.value)">.</button>
+                    <button type="button" class="clearField" value="c" onclick="return clearResultField()">C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

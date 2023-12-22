@@ -1,0 +1,188 @@
+/* style for parent application container */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* style for application body and content */
+.calculatorArea {
+    background-color: #f5f5f5;
+    padding: 1%;
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    border-radius: 25px;
+}
+
+/* style for application body */
+.calculatorBody {
+    background-color: #93c9ef;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: 1px 1px 2px 2px #1B4556;
+}
+/* style for application header */
+
+.calculatorHeader {
+    font-family: Oxygen;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 2%;
+    color: #0e252d;
+    /* To disable user selections */
+    user-select: none;
+}
+
+/* style for result field */
+
+.calculatorResult {
+    text-align: end;
+    margin: 0 auto;
+    width: auto;
+    height: 45px;
+    position: relative;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-family: Oxygen;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 90px;
+    color: white;
+    background-color: #193e4d;
+    user-select: none;
+    border: 1px solid #f5f5f5;
+}
+
+/* style for result field */
+#resultField {
+    display: inline-block;
+}
+
+
+/* style for application key area */
+.calculatorKeys {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    user-select: none;
+}
+
+
+/* style for application buttons */
+button {
+    height: 50px;
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1d70a2;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Oxygen;
+    box-shadow: 1px 1px 2px #1B4556;
+    text-align: center;
+    line-height: 0.5em;
+    user-select: none;
+}
+
+button:hover {
+    background-color: #146192;
+    color: white;
+}
+
+
+/* additional style for util and operator buttons */
+.assignment {
+    height: 120px;
+    border-radius: 20px;
+    background-color: #c36058;
+    grid-row: 4/6;
+    grid-column: 4/6;
+    font-size: 20px;
+}
+
+.backspace {
+    border-radius: 20px;
+    grid-row: 3;
+    grid-column: 4/6;
+}
+
+.specialOperator {
+    grid-column: 4;
+}
+
+.assignment:hover {
+    background-color: #9e4b45;
+}
+
+.backspace {
+    background-color: #4a93f3;
+}
+
+.backspace:hover {
+    background-color: #3b73bd;
+}
+
+.clearField {
+    background-color: #4a93f3;
+}
+
+
+.clearField:hover {
+    background-color: #3b73bd;
+}
+
+.operator {
+    background-color: #3f788e;
+}
+
+.operator:hover {
+    background-color: #2a6a83;
+}
+
+
+/* 
+
+colors used : 
+
+#2a6a83 - Ming
+#3f788e - Jelly Bean Blue
+#3b73bd - Cyan-Blue Azure
+#4a93f3 - Blueberry
+#9e4b45 - Middle Red Purple
+#c36058 - Indian Red
+#146192 - Blue Sapphire
+#1B4556 - Japanese Indigo
+#1d70a2 - Lapis Lazuli
+#f5f5f5 - offwhite
+
+
+*/
