@@ -3,6 +3,7 @@ const outputArea = document.querySelector(".large-area--output");
 
 const btnFormat = document.querySelector(".controls__button--format");
 const btnMinify = document.querySelector(".controls__button--minify");
+const btnReset = document.querySelector(".controls__button--reset");
 
 btnFormat.addEventListener("click", () => {
     try {
@@ -20,4 +21,9 @@ btnMinify.addEventListener("click", () => {
     } catch (error) {
         outputArea.value = error;
     }
+});
+
+btnReset.addEventListener("click", () => {
+    inputArea.value="";
+    outputArea.value="";
 });
